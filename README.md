@@ -41,6 +41,8 @@ Tested on Oracle Enterprise Linux 7.2
 
 -Download this git repo and begin testing...
 
+NOTE: All files from ~/ntc-ansible/library/ were copied over to ~/network_ansible/library/
+
 `cd ~; git clone https://github.com/jamiekowalczik/network_ansible.git`
 
 `cd ~/network_ansible`
