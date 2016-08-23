@@ -33,7 +33,7 @@ Tested on Oracle Enterprise Linux 7.2
 
 `cd ~; git clone https://github.com/networktocode/ntc-ansible --recursive`
 
--Setup your environment (this can be put in your .bashrc file)
+-Setup your environment (this can be put in your ~/.bash_profile file)
 
 `source ~/ansible/hacking/env-setup`
 
