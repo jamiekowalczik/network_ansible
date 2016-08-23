@@ -38,3 +38,7 @@ Tested on Oracle Enterprise Linux 7.2
 `source ~/ansible/hacking/env-setup`
 
 -Download this git repo and begin testing...
+
+`cd ~; git clone https://github.com/jamiekowalczik/network_ansible.git`
+
+`cd ~/network_ansible`
