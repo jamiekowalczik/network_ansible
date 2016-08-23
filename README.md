@@ -9,9 +9,11 @@ Tested on Oracle Enterprise Linux 7.2
 
 `sudo systemctl restart network`
 
--Update the base intallation
+-Update the base installation then reboot
 
 `sudo yum update -y`
+
+`sudo reboot`
 
 -Install several packages
 
