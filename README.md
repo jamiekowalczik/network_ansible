@@ -7,7 +7,7 @@ Tested on Oracle Enterprise Linux 7.2
 
 `sudo sed -i 's/ONBOOT=no/ONBOOT=yes/g' /etc/sysconfig/network-scripts/ifcfg-enp0s3`
 
-`sudo /etc/init.d/network restart`
+`sudo systemctl restart network`
 
 -Update the base intallation
 
