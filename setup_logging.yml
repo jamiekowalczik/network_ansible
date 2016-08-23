@@ -1,0 +1,23 @@
+---
+  - name: SETUP LOGGING
+    hosts: all
+    gather_facts: no
+    connection: local
+   
+    handlers:
+      - name: write config
+        ios_command:
+          commands: write mem
+          username: "{{ un }}"
+          password: "{{ pwd }}"
+          host: "{{ ipaddr }}"
+
+    tasks:
+      - name: Ensure logging configuration exists
+        ios_template:
+          src: templates/logging.j2
+          username: "{{ un }}"
+          password: "{{ pwd }}"
+          host: "{{ ipaddr }}"
+        notify:
+          - write config

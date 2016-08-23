@@ -1,0 +1,21 @@
+---
+- name: Remove SNMP setting
+  hosts: all
+  connection: local
+  gather_facts: no
+
+  tasks:
+  - name: execute ntc_config_command module to remove an SNMP setting
+    ntc_config_command:
+      connection: ssh
+      platform: "{{ net_platform }}"
+      commands:
+        - no snmp-server community public RO
+        - end
+        - wr mem
+      host: "{{ ipaddr }}"
+      username: "{{ un }}"
+      password: "{{ pwd }}"
+    register: result
+
+  - debug: var=result

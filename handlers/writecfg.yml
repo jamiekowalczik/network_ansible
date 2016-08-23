@@ -1,0 +1,8 @@
+---
+  ## Just here for reference. Not called from any playbooks
+  - name: write config
+    ios_command:
+      commands: write mem
+      username: "{{ un }}"
+      password: "{{ pwd }}"
+      host: "{{ ipaddr }}"

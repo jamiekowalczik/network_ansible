@@ -1,0 +1,14 @@
+---
+  - name: PLAY - BACKUP
+    hosts: all
+    gather_facts: no
+    connection: local
+
+    tasks:
+      - name: SAVE AND BACKUP CONFIGS
+        ntc_save_config:
+          local_file=backups/{{ inventory_hostname }}.conf
+          platform={{ net_platform }}
+          host={{ ipaddr }}
+          username={{ un }}
+          password={{ pwd }}

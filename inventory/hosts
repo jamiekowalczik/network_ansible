@@ -1,0 +1,14 @@
+[all:vars]
+un=ciscouser
+pwd=ciscopass
+
+[ios-switches]
+TESTSWITCH
+
+[ios-switches:vars]
+backupdir=./backups/
+net_platform=cisco_ios_ssh
+logging_server=1.1.1.1
+snmp_ro=public
+snmp_rw=private
+snmp_contact=me

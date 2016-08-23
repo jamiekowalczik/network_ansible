@@ -1,0 +1,4 @@
+---
+hostname: TESTSWITCH
+ipaddr: 1.1.1.2
+snmp_location: here
