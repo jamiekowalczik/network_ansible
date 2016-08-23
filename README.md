@@ -6,6 +6,7 @@ Test on Oracle Enterprise Linux 7.2
 -Enable the network interface and restart the network service
 
 sudo sed -i 's/ONBOOT=no/ONBOOT=yes/g' /etc/sysconfig/network-scripts/ifcfg-enp0s3
+
 sudo /etc/init.d/network restart
 
 -Install several packages
