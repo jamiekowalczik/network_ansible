@@ -77,7 +77,7 @@
 
 * Update TESTSWITCH with the hostname of the device you want to backup within the [ios-switches] section.  You can add several devices to that section.
 
-* For each device listed in the [ios-switches] section create a text file with the same name as the hostname in the ./host_vars/ directory.  The only value that matters for backing up the device is ipaddr but you can update the hostname and snmp_location accordingly to have a head start on the other playbooks.
+* For each device listed in the [ios-switches] section create a text file with the same name as the hostname in the ./host_vars/ directory.  You can use TESTSWITCH as a template and then delete it when you are done creating all of your files.  The only value that matters for backing up the device is ipaddr but you can update the hostname and snmp_location accordingly to have a head start on the other playbooks.
 
 * Lastly run the play book with the following command. When it completes, hopefully successfully, you will find a backup of your config in the ./backups/ directory.
 
