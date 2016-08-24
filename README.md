@@ -2,7 +2,7 @@
 Tested on Oracle Enterprise Linux 7.2
 
 ---
-NOTE: I am using ansible 2.2 from source.  I had issues with the ansible rpm from EPEL.
+#### NOTE: I am using ansible 2.2 from source.  I had issues with the ansible rpm from EPEL.
 
 [netansible@localhost ~]$ python --version
 
@@ -25,53 +25,53 @@ ansible 2.2.0 (devel a695e18615) last updated 2016/08/23 16:27:59 (GMT -400)
 
 ---
 
--Perform a base installation 
+### Perform a base installation 
 
--Enable the network interface and restart the network service
+### Enable the network interface and restart the network service
 
 `sudo sed -i 's/ONBOOT=no/ONBOOT=yes/g' /etc/sysconfig/network-scripts/ifcfg-enp0s3`
 
 `sudo systemctl restart network`
 
--Update the base installation then reboot
+### Update the base installation then reboot
 
 `sudo yum update -y`
 
 `sudo reboot`
 
--Install several packages
+### Install several packages
 
 `sudo yum install -y wget net-tools git python-setuptools gcc libxml2 libxml2-devel python-devel openssl-devel libxslt libsxlt-devel`
 
--Install pip
+### Install pip
 
 `sudo easy_install pip`
 
--Install more packages, this time using pip
+### Install more packages, this time using pip
 
 `sudo pip install paramiko PyYAML Jinja2 httplib2 six ntc-ansible`
 
--Install ansible source
+### Install ansible source
 
 `cd ~; git clone git://github.com/ansible/ansible.git --recursive`
 
--Install ntc-ansible source
+### Install ntc-ansible source
 
 `cd ~; git clone https://github.com/networktocode/ntc-ansible --recursive`
 
--Setup your environment (this can be put in your ~/.bash_profile file)
+### Setup your environment (this can be put in your ~/.bash_profile file)
 
 `source ~/ansible/hacking/env-setup >/dev/null 2>&1`
 
--Download this git repo and begin testing...
+### Download this git repo and begin testing...
 
-NOTE: All files from ~/ntc-ansible/library/ were copied over to ~/network_ansible/library/
+#### NOTE: All files from ~/ntc-ansible/library/ were copied over to ~/network_ansible/library/
 
 `cd ~; git clone https://github.com/jamiekowalczik/network_ansible.git`
 
 `cd ~/network_ansible`
 
--Example to backup IOS config(s)
+### Example to backup IOS config(s)
 
 Update the un/pwd within ./inventory/hosts with the credentials of your device(s).  This can be encrypted.. more on that later.
 
