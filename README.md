@@ -7,21 +7,21 @@
 > [netansible@localhost ~]$ python --version
 >
 > Python 2.7.5
+>
+> [netansible@localhost ~]$ ansible --version
 
-[netansible@localhost ~]$ ansible --version
-
- [WARNING]: Optional dependency 'cryptography' raised an exception, falling back
-to 'Crypto'
-
-ansible 2.2.0 (devel a695e18615) last updated 2016/08/23 16:27:59 (GMT -400)
-
-  lib/ansible/modules/core: (detached HEAD 368ca738fa) last updated 2016/08/23 16:28:06 (GMT -400)
-
-  lib/ansible/modules/extras: (detached HEAD 0749ce6faa) last updated 2016/08/23 16:28:10 (GMT -400)
-
-  config file =
-
-  configured module search path = Default w/o overrides
+> [WARNING]: Optional dependency 'cryptography' raised an exception, falling back
+> to 'Crypto'
+>
+> ansible 2.2.0 (devel a695e18615) last updated 2016/08/23 16:27:59 (GMT -400)
+>
+>  lib/ansible/modules/core: (detached HEAD 368ca738fa) last updated 2016/08/23 16:28:06 (GMT -400)
+>
+>  lib/ansible/modules/extras: (detached HEAD 0749ce6faa) last updated 2016/08/23 16:28:10 (GMT -400)
+>
+>  config file =
+>
+>  configured module search path = Default w/o overrides
 
 ---
 
