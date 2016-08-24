@@ -5,8 +5,8 @@
 #### NOTE: I am using ansible 2.2 from source.  I had issues with the ansible rpm from EPEL.
 
 > [netansible@localhost ~]$ python --version
-
-Python 2.7.5
+>
+> Python 2.7.5
 
 [netansible@localhost ~]$ ansible --version
 
