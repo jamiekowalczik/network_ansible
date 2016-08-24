@@ -61,7 +61,7 @@ ansible 2.2.0 (devel a695e18615) last updated 2016/08/23 16:27:59 (GMT -400)
 
 -Setup your environment (this can be put in your ~/.bash_profile file)
 
-`source ~/ansible/hacking/env-setup`
+`source ~/ansible/hacking/env-setup >/dev/null 2>&1`
 
 -Download this git repo and begin testing...
 
