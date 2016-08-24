@@ -4,7 +4,7 @@
 ---
 #### NOTE: I am using ansible 2.2 from source.  I had issues with the ansible rpm from EPEL.
 
-`[netansible@localhost ~]$ python --version
+> [netansible@localhost ~]$ python --version
 
 Python 2.7.5
 
@@ -22,8 +22,6 @@ ansible 2.2.0 (devel a695e18615) last updated 2016/08/23 16:27:59 (GMT -400)
   config file =
 
   configured module search path = Default w/o overrides
-
-`
 
 ---
 
